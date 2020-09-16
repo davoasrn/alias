@@ -6,6 +6,7 @@ import ReduxThunk from 'redux-thunk';
 import {enableScreens} from 'react-native-screens';
 import authReducer from './src/store/reducers/auth';
 import AppNavigator from './src/navigation/AppNavigator';
+import { Provider as PaperProvider } from 'react-native-paper';
 
 enableScreens();
 
@@ -18,7 +19,9 @@ const store = createStore(rootReducer, applyMiddleware(ReduxThunk));
 const App = () => {
   return (
     <Provider store={store}>
-      <AppNavigator />
+      <PaperProvider>
+        <AppNavigator />
+      </PaperProvider>
     </Provider>
   );
 };
