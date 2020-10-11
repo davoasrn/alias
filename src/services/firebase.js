@@ -1,9 +1,9 @@
 import firebase from 'firebase';
 
 const config = {
-    apiKey: "ADD-YOUR-DETAILS-HERE",
-    authDomain: "ADD-YOUR-DETAILS-HERE",
-    databaseURL: "ADD-YOUR-DETAILS-HERE"
+    apiKey: "AIzaSyDIqEEn4OhnbuP_bX6-eh9aAW3m2iFFpDc",
+    authDomain: "alias-cb647.firebaseapp.com",
+    databaseURL: "https://alias-cb647.firebaseio.com/"
   };
   firebase.initializeApp(config);
   export const auth = firebase.auth;
