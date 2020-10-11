@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import database from '@react-native-firebase/database';
 
 const config = {
     apiKey: "AIzaSyDIqEEn4OhnbuP_bX6-eh9aAW3m2iFFpDc",
