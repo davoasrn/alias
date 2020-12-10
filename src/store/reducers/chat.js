@@ -1,10 +1,12 @@
 import {
-    FETCH_CHAT_MESSAGES,
-    CHAT_MESSAGE_CREATE,
+  FETCH_CHAT_MESSAGES,
+  CHAT_MESSAGE_CREATE,
+  CHAT_UPDATE,
+  CHAT_DELETE,
 } from '../actions/chat';
 
 const initialState = {
-  messages: []
+  messages: [],
 };
 
 export default (state = initialState, action) => {
@@ -13,6 +15,14 @@ export default (state = initialState, action) => {
     case CHAT_MESSAGE_CREATE:
       return {
         messages: action.messages,
+      };
+    case CHAT_UPDATE:
+      return {
+        messages: action.messages,
+      };
+    case CHAT_DELETE:
+      return {
+        messages: [],
       };
   }
   return state;
