@@ -16,6 +16,11 @@ export const createStorageReferenceToFile = (response) => {
 export const uploadFileToFireBase = (imagePickerResponse) => {
   const fileSource = getFileLocalPath(imagePickerResponse);
   const storageRef = createStorageReferenceToFile(imagePickerResponse);
-  console.log(fileSource, 'here');
-  return storageRef.putFile(fileSource);
+  return storageRef
+    .putFile(fileSource)
+    .then((data) => {
+      console.log('Image uploaded to the bucket!');
+      return data;
+    })
+    .catch((e) => console.log('uploading image error => ', e));
 };

@@ -11,7 +11,6 @@ const Stack = createStackNavigator();
 
 const AppNavigator = () => {
   const isAuth = useSelector(isAuthenticated);
-  console.log(isAuth);
   //   const didTryAutoLogin = useSelector((state) => state.auth.didTryAutoLogin);
 
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {View, StyleSheet} from 'react-native';
 import {Title} from 'react-native-paper';
 import FormButton from '../../components/ui/FormButton';
